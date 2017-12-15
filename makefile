@@ -9,9 +9,9 @@ IFLAGS = -I$(MLCC_FOLDER)
 IGM = -I"../Geom" $(IFLAGS)
 IDS = -I"../DataStruct" $(IFLAGS)
 
-BUILD0 = @g++ -o $(BIN_FOLDER)/$@.exe $@.cc $(IFLAGS)
+BUILD0 = @g++ -o $(BIN_FOLDER)/$@.out $@.cc $(IFLAGS)
 
-BUILD1 = @printf "%s.exe compiled\n" $@
+BUILD1 = @printf "%s.out compiled\n" $@
 
 all:
 
